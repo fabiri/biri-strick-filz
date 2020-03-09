@@ -1,3 +1,144 @@
 ﻿.carousel-inner img {
   margin: auto;
 }
+
+table{
+    display:block;
+    margin:50px;
+}
+
+#subheadline{
+    background-color: hsl(0,0%,95%);
+}
+
+.table .thead-dark th{
+    background-color:lightcoral;
+    border:none;
+}
+
+.table .thead-dark th:first-child{
+    border-top-left-radius: 10px;
+}
+
+.table .thead-dark th:last-child{
+    border-top-right-radius: 10px;
+}
+
+
+
+
+
+
+
+article img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+h2 {
+  margin-bottom: .5em;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 1em;
+  margin: 3vw
+}
+
+
+/* hover styles */
+.product-listing {
+  position: relative;
+}
+
+.product-image {
+  line-height: 0;
+  overflow: hidden;
+  height:300px;
+  border-radius: 10px;
+}
+
+.product-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.product-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(0,100,0,0.4);
+  color: white;
+  border-radius: 10px;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-listing:hover .product-title {
+  opacity: 1;
+  text-decoration: none;
+  color:white;
+}
+
+.product-listing:hover .product-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .product-title {
+    opacity: 1;
+  }
+  .product-image img {
+    filter: blur(2px);
+  }
+}
+
+#socks{
+    width:140%;
+}
+
+h2{
+    margin-left: 3vw;
+}
+
+#baum{
+    display:block;
+    width: 200px;
+
+    margin-top: 2vw;
+}
+
+#mail, #phone{
+    width:30px;
+    margin-right:10px
+}
+
+#contact{
+    margin: 30px;
+}
+
+.container{
+    margin-top:2vw;
+}
+
+.btn{
+    background-color:#f63c54;
+    border-color: hsl(0,70%,40%);
+}
+.btn:hover{
+    background-color:hsl(100,70%,60%);
+    border-color: hsl(100,70%,40%);
+}
