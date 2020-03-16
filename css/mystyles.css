@@ -3,11 +3,13 @@
 }
 
 .carousel-inner{
-   border-radius: 5px;  
+    border-radius: 5px; 
+    margin: auto;
+    max-width:900px; 
+    max-height:600px;
 }
+
 .carousel-item {
-max-height: 500px;
-    
 }
 
 #subheadline{
